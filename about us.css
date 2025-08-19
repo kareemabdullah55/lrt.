@@ -1,0 +1,195 @@
+/* about us.css */
+
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #faf9f6;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero .overlay {
+  background-color: rgba(0,0,0,0.5);
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* MISSION & VISION */
+.mv-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.mv-section div {
+  flex: 1 1 45%;
+  background-color: #fef4d9;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.mv-section h2 {
+  margin-bottom: 0.5rem;
+  color: #006e63;
+}
+
+/* CORE VALUES */
+.core-values {
+  margin-bottom: 3rem;
+}
+
+.core-values h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fe7912;
+}
+
+.values-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.value-item {
+  text-align: center;
+  flex: 1 1 200px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.value-item img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+/* WHO WE ARE */
+.who-we-are {
+  background-color: #fef4d9;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+/* FOUNDER INTRO */
+.founder-intro {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.founder-text {
+  flex: 1 1 45%;
+}
+
+.founder-text h1 {
+  color: #006e63;
+  margin-bottom: 0.5rem;
+}
+
+.founder-text h2 {
+  margin-bottom: 0.5rem;
+}
+
+.founder-text h4 {
+  margin-bottom: 1rem;
+  color: #fe7912;
+}
+
+.founder-text p {
+  margin-bottom: 1rem;
+}
+
+.founder-text ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.founder-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+.founder-text blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #006e63;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* LINKEDIN BUTTON */
+.contact-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0a66c2;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.contact-item a:hover {
+  background-color: #004182;
+}
+
+.contact-item img {
+  width: 20px;
+  height: 20px;
+}
+
+/* FOUNDER GALLERY */
+.founder-gallery {
+  flex: 1 1 45%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.founder-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.founder-gallery img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,282 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #faf9f6;
+  color: #000;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #FF684F;
+}
+
+/* Mobile Menu */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  background-color: #FF3B56;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  padding: 1rem;
+}
+
+.nav-links.open li {
+  margin: 1rem 0;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #FF684F;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h2 {
+  color: #000;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #006e63;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #FF3B56;
+}
+
+/* About */
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Services */
+.services .service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service {
+  background-color: #fef4d9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service h3 {
+  margin-bottom: 1rem;
+  color: #fe7912;
+}
+
+/* Case Studies */
+.case-studies .cases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.case {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.case h3 {
+  margin-bottom: 1rem;
+  color: #FF3B56;
+}
+
+/* Team */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.member {
+  background-color: #fef4d9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.member h3 {
+  margin-bottom: 1rem;
+  color: #fe7912;
+}
+
+.sales-team {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Founder */
+.founder-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.founder-img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.founder-text {
+  flex: 1;
+}
+
+.founder-text h3 {
+  margin-bottom: 1rem;
+  color: #FF3B56;
+}
+
+/* Contact Form */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #FF3B56;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #FF684F;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+
+}
