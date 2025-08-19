@@ -114,12 +114,12 @@ body {
 .founder-gallery {
   flex: 1 1 45%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 0.5rem;
 }
 
 .founder-gallery img {
-  width: 100%;
+  width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
